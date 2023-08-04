@@ -1,12 +1,17 @@
 package logica;
 
-import bd.DatabaseMysql;
 import modelo.Carro;
 
 public class CarroService {
 
+    private ILogica info;
+
+    public CarroService(ILogica info) {
+        this.info = info;
+    }
+
     public void guardarCocheDB(Carro carro) {
-        DatabaseMysql db = new DatabaseMysql();
-        db.guardar();
+        System.out.println("Guardado");
+        info.GuardarDatosCarros();
     }
 }

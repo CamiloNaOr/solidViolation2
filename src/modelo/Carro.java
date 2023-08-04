@@ -1,18 +1,17 @@
 package modelo;
 
-public class Carro {
+public abstract class Carro {
 
     public String marca;
 
-    public Carro(String marca) {
-        this.marca = marca;
+    abstract String getMarca();
+    abstract int getPrecio();
+
+    public static void imprimirPrecioMedioCoche(Carro [] carros)
+    {
+        for (Carro carro : carros) {
+            System.out.println(carro.getPrecio());
+        }
     }
 
-    String getMarcaCoche() {
-        return marca;
-    }
-
-    void guardarCocheDB(Carro carro) {
-        System.out.println("Guarde en BD");
-    }
 }

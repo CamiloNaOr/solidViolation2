@@ -1,9 +1,11 @@
 package bd;
 
-public class DatabaseMysql {
+import logica.ILogica;
 
-    public void guardar() {
-        System.out.println("Creo conexion a la base de datos");
-        System.out.println("Guarde en la base de datos");
+public class DatabaseMysql implements ILogica {
+
+    public void GuardarDatosCarros()
+    {
+        System.out.println("Guardar en la base de datos");
     }
 }
