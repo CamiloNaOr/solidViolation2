@@ -1,4 +1,4 @@
 # solidViolation2
-Camilo Navarro
-Luisa Niño
+Camilo Navarro;
+Luisa Niño;
 Andres Bonilla
